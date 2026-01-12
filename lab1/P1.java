@@ -2,7 +2,7 @@ package lab1;
 
 import java.util.Scanner;
 
-public class Switch {
+public class P1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char choice = sc.next().charAt(0);
