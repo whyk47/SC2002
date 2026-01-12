@@ -21,6 +21,28 @@ public class P3 {
             System.out.print(" ".repeat(ROW_LEN - usd.length() - 2));
             System.out.printf("%-14.2f\n", i * USD_TO_SGD);
         }
+
+        System.out.println("US$" + " ".repeat(ROW_LEN - 5) + "S$");
+        System.out.println("-".repeat(ROW_LEN));
+        float i = starting;
+        while (i <= ending) {
+            String usd = String.valueOf(Math.round(i * 100.0) / 100.0);
+            System.out.print(usd);
+            System.out.print(" ".repeat(ROW_LEN - usd.length() - 2));
+            System.out.printf("%-14.2f\n", i * USD_TO_SGD);
+            i += increment;
+        }
+
+        System.out.println("US$" + " ".repeat(ROW_LEN - 5) + "S$");
+        System.out.println("-".repeat(ROW_LEN));
+        i = starting;
+        do {
+            String usd = String.valueOf(Math.round(i * 100.0) / 100.0);
+            System.out.print(usd);
+            System.out.print(" ".repeat(ROW_LEN - usd.length() - 2));
+            System.out.printf("%-14.2f\n", i * USD_TO_SGD);
+            i += increment;
+        } while (i <= ending);
         sc.close();
     }
 }
