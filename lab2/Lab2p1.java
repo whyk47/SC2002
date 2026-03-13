@@ -68,8 +68,8 @@ public class Lab2p1 {
         final int NUM_QNS = 5;
         int score = 0;
         for (int i = 0; i < NUM_QNS; i++) {
-            int n1 = (int) (Math.random() * 10);
-            int n2 = (int) (Math.random() * 10);
+            int n1 = (int) (Math.random() * 9 + 1);
+            int n2 = (int) (Math.random() * 9 + 1);
             System.out.print("How much is " + n1 + " times " + n2 + "? ");
             int ans = sc.nextInt();
             if (ans == n1 * n2) {

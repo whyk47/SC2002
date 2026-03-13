@@ -1,6 +1,6 @@
 package tut5;
 
-abstract public class Polygon {
+public abstract class Polygon {
     public enum KindofPolygon { POLY_PLAIN, POLY_RECT,
     POLY_TRIANG};
     protected String name;

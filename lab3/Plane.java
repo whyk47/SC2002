@@ -46,6 +46,7 @@ public class Plane {
     }
 
     public void assignSeat(int seatId, int cust_id) {
+        // check for out of bounds
         if (seat[seatId - 1].isOccupied()) {
             System.out.println("Seat already assigned to a customer.");
             return;
